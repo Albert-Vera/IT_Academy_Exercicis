@@ -1,4 +1,4 @@
-package Exercici_1;
+package Variables_i_Constants;
 
 public class Fase_1 {
 
