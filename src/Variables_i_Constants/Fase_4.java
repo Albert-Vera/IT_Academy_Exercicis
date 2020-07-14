@@ -16,7 +16,6 @@ public class Fase_4 {
         System.out.println( "El meu nom és " + nom + " " + cognoms);
         System.out.println("Vaig néixer el " + dia + "/" + mes + "/" + any);
         System.out.println(" El meu any de naixement" + frase);
-
     }
     static boolean calcular_Bisiesto(int anys){
         int dos_Ultimos = anys - (anys / 100 * 100);  // Obtiene los dos últimos digitos para calcular bisiesto

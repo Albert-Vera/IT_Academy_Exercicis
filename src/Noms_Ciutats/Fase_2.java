@@ -1,5 +1,4 @@
 package Noms_Ciutats;
-
 import java.util.Arrays;
 import java.util.Scanner;
 
@@ -33,7 +32,5 @@ public class Fase_2 {
         for (int i = 0; i < array_Ciutats.length; i++) {
             System.out.println(array_Ciutats[i]);
         }
-
-
     }
 }

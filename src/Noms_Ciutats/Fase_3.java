@@ -1,5 +1,4 @@
 package Noms_Ciutats;
-
 import java.util.Arrays;
 import java.util.Scanner;
 

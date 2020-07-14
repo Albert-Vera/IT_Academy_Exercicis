@@ -1,5 +1,4 @@
 package Lletres_Repetides;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -21,6 +20,5 @@ public class Fase_2 {
                     System.out.println("**** " + nom.get(i) + " **** Los nombres de personas no pueden contener números !");
                 }else System.out.println("**** " + nom.get(i) + " **** es una vocal");
         }
-
     }
 }

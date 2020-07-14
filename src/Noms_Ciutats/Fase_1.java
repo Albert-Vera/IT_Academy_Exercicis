@@ -1,5 +1,4 @@
 package Noms_Ciutats;
-
 import java.util.Scanner;
 
 public class Fase_1 {

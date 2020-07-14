@@ -7,6 +7,5 @@ public class Fase_1 {
         for (int i = 0; i < nom.length; i++) {
             System.out.print(nom[i] + " ");
         }
-
     }
 }

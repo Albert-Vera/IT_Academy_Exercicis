@@ -1,6 +1,4 @@
 package Noms_Ciutats;
-
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class Fase_4 {
@@ -8,7 +6,6 @@ public class Fase_4 {
         String ciutat_1, ciutat_2, ciutat_3, ciutat_4, ciutat_5, ciutat_6;
         Scanner sc = new Scanner(System.in);
         String[] array_Ciutats = new String[6];
-        String[] array_Ciutats_Cambiadas = new String[6];
 
         System.out.print("Introdueix el nom de la primera ciutat: ");
         ciutat_1 = sc.nextLine();

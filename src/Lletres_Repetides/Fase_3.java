@@ -8,6 +8,7 @@ public class Fase_3 {
     public static void main(String[] args) {
         String nom = "Alberttttttttt";
         Map<Integer, Character> nomMap = new HashMap<>();
+
         for (int i = 0; i < nom.length(); i++) {
             nomMap.put(i, nom.charAt(i));
         }

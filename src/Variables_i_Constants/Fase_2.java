@@ -7,7 +7,6 @@ public class Fase_2 {
         int cantidadBisiestos = 0;
 
         for (int anys = any_inicial; anys < any_nacimiento +1; anys++) {
-
             int dos_Ultimos = anys - (anys / 100 * 100);  // Obtiene los dos últimos digitos para calcular bisiesto
             int bisiesto = dos_Ultimos % 4;               // Calcula bisiesto
             if ( dos_Ultimos == 0) {  //   Si dos últimos dígitos son Zero, calcula sobre los dos primeros

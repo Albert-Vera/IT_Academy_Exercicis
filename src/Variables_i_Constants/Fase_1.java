@@ -1,7 +1,6 @@
 package Variables_i_Constants;
 
 public class Fase_1 {
-
     public static void main(String[] args) {
         String nom = "Albert";
         String cognom1 = "Vera";
@@ -13,6 +12,5 @@ public class Fase_1 {
 
         System.out.println(cognom1 + " " + cognom2 + " " + nom);
         System.out.println(dia + "/" + mes +"/" + any);
-
     }
 }

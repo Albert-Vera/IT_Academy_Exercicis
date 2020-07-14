@@ -1,7 +1,6 @@
 package Variables_i_Constants;
 
 public class Fase_3 {
-
     public static void main(String[] args) {
         final int any_inicial = 1948;
         int any_nacimiento = 1969;
