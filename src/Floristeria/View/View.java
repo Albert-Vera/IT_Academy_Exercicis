@@ -40,6 +40,7 @@ public class View {
         System.out.print("\t\t\t\t\t\t                         Elije una opción: ");
     }
     public void ver_stock(){
-
+        //TODO qui falta printar el stock, aunque lo suyo es hacer la lógica en un método en Gestion_Floristeris y
+        //TODO aqui solo imprimir por pantalla.
     }
 }
