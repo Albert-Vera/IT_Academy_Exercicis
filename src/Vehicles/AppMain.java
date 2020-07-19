@@ -27,8 +27,8 @@ public class AppMain {
 
         switch ( opcio_Vehicle){
             case "1":   bike = crear_Vehicle_Bike( sc);
-                        Wheel pneumatic_1 = new Wheel();
-                        Wheel pneumatic_2 = new Wheel();
+                        Wheel pneumatic_1 ;
+                        Wheel pneumatic_2 ;
                         pneumatic_1 = llegir_Dades(wheel, sc, davant, ": ");
                         pneumatic_2 = llegir_Dades(wheel, sc, darrera, ": ");
                         try {
