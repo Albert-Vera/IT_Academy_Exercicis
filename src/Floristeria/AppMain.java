@@ -5,6 +5,9 @@ import Floristeria.View.View;
 
 import java.util.Scanner;
 
+/**
+ * Código no terminado. Lista TODO para ver lo que falta
+ */
 public class AppMain {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
