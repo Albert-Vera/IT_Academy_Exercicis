@@ -1,7 +1,7 @@
-package Jobs.Application;
+package Polimorfismo.Application;
 
 
-import Jobs.Domain.IPaymentRate;
+import Polimorfismo.Domain.IPaymentRate;
 
 public class PaymentFactory{
 

@@ -1,8 +1,7 @@
-package Jobs.View;
+package Polimorfismo.View;
 
-import Jobs.Application.JobsController;
-import Jobs.Domain.AbsStaffMember;
-import Jobs.Domain.Employee;
+import Polimorfismo.Application.JobsController;
+import Polimorfismo.Domain.Employee;
 
 import java.util.List;
 
