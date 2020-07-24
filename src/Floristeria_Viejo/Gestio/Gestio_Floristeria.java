@@ -1,11 +1,11 @@
-package Floristeria.Gestio;
+package Floristeria_Viejo.Gestio;
 
-import Floristeria.Model.Floristeria;
-import Floristeria.View.View;
+import Floristeria_Viejo.Model.Floristeria;
+import Floristeria_Viejo.View.View;
 
 import java.util.Scanner;
 
-import static Floristeria.AppMain.opcion_Menu;
+import static Floristeria_Viejo.AppMain.opcion_Menu;
 
 /**
  * Esta clase es para gestión de la floristeria

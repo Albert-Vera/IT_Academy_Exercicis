@@ -1,7 +1,7 @@
-package Floristeria;
+package Floristeria_Viejo;
 
-import Floristeria.Gestio.Gestio_Floristeria;
-import Floristeria.View.View;
+import Floristeria_Viejo.Gestio.Gestio_Floristeria;
+import Floristeria_Viejo.View.View;
 
 import java.util.Scanner;
 

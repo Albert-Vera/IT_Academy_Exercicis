@@ -1,4 +1,4 @@
-package Floristeria.Model;
+package Floristeria_Viejo.Model;
 
 public class Flor extends Article{
     private String color;
