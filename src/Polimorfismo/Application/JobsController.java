@@ -1,9 +1,12 @@
 package Polimorfismo.Application;
 
 
+import Polimorfismo.Domain.AbsStaffMember;
 import Polimorfismo.Domain.Employee;
+import Polimorfismo.Domain.Volunteer;
 import Polimorfismo.Persistence.EmployeeRepository;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class JobsController {
@@ -31,20 +34,24 @@ public class JobsController {
 
 
     public void payAllEmployeers() {
-        double total_salary= 0;
-       for ( Employee salarys: repository.getAllMembers()) {
-          total_salary += salarys.getSalaryPerMonth();
-       }
-        System.out.println("\n\nTotal pay all employees: " + total_salary + "\n");
+        List<AbsStaffMember> employeesList = new ArrayList<>();
+        employeesList = repository.getAllMembers();
+        for (AbsStaffMember a : employeesList) {
+            a.pay();
+        }
     }
 
-    public List<Employee> getAllEmployees() {
+    public List<AbsStaffMember> getAllEmployees() {
         return repository.getAllMembers();
     }
 
-    public void createVolunteer(String name, String address, String phone ) throws Exception {
-        Employee volunteer = new Employee(name, address, phone );
-        repository.addMember(volunteer);
-
+    public void createVolunteer(String name, String address, String phone) {
+        Volunteer volunteer;
+        try {
+            volunteer = new Volunteer(name, address, phone, "no salary");
+            repository.addMember(volunteer);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 }

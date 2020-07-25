@@ -21,7 +21,7 @@ public class Employee extends AbsStaffMember {
     @Override
     public void pay() {
 
-        getTotalPaid( paymentRate.pay(salaryPerMonth));
+        setTotalPaid(paymentRate.pay(salaryPerMonth));
     }
 
     public double getSalaryPerMonth() {

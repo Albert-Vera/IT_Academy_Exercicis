@@ -43,11 +43,12 @@ public abstract class AbsStaffMember {
         return phone;
     }
 
-    public double getTotalPaid(double pay) {
+    public double getTotalPaid() {
         return totalPaid;
     }
 
     public void setTotalPaid(double totalPaid) {
+
         this.totalPaid = totalPaid;
     }
 

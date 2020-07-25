@@ -1,7 +1,8 @@
 package Polimorfismo.View;
 
 import Polimorfismo.Application.JobsController;
-import Polimorfismo.Domain.Employee;
+import Polimorfismo.Domain.AbsStaffMember;
+import Polimorfismo.Domain.Volunteer;
 
 import java.util.List;
 
@@ -22,17 +23,29 @@ public class Main {
 
         controller.payAllEmployeers();
 
-        List<Employee> allEmployees=controller.getAllEmployees();
+        List<AbsStaffMember> allEmployees=controller.getAllEmployees();
 
-        for ( Employee employee: allEmployees) {
-            System.out.println("EMPLOYEES: " + " \n");
-            System.out.println("\t\t\tId: " + employee.getId());
-            System.out.println("\t\t\tName " + employee.getName());
-            System.out.println("\t\t\tAdress: " + employee.getAddress());
-            System.out.println("\t\t\tPhone: " + employee.getPhone());
-            System.out.println("\t\t\tSalary Month: " + employee.getSalaryPerMonth());
+        for ( AbsStaffMember employee: allEmployees) {
+            if (employee instanceof Volunteer) {
+                System.out.println("EMPLOYEES: " + " \n");
+                System.out.println("\t\t\tId: " + employee.getId());
+                System.out.println("\t\t\tName " + employee.getName());
+                System.out.println("\t\t\tAdress: " + employee.getAddress());
+                System.out.println("\t\t\tPhone: " + employee.getPhone());
+                System.out.println("\t\t\tSalary Month: " + ((Volunteer) employee).getDescription());
+            } else {
+                System.out.println("EMPLOYEES: " + " \n");
+                System.out.println("\t\t\tId: " + employee.getId());
+                System.out.println("\t\t\tName " + employee.getName());
+                System.out.println("\t\t\tAdress: " + employee.getAddress());
+                System.out.println("\t\t\tPhone: " + employee.getPhone());
+                System.out.println("\t\t\tSalary Month: " +  employee.getTotalPaid());
+            }
+
+
 
         }
     }
 
 }
+
