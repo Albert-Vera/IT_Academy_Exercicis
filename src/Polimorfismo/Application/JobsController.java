@@ -34,10 +34,10 @@ public class JobsController {
 
 
     public void payAllEmployeers() {
-        List<AbsStaffMember> employeesList = new ArrayList<>();
+        List<AbsStaffMember> employeesList;
         employeesList = repository.getAllMembers();
-        for (AbsStaffMember a : employeesList) {
-            a.pay();
+        for (AbsStaffMember employee : employeesList) {
+            employee.pay();
         }
     }
 

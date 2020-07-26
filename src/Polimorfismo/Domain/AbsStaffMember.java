@@ -51,13 +51,5 @@ public abstract class AbsStaffMember {
 
         this.totalPaid = totalPaid;
     }
-
-    public static int getCounterMembers() {
-        return COUNTER_MEMBERS;
-    }
-
-    public static void setCounterMembers(int counterMembers) {
-        COUNTER_MEMBERS = counterMembers;
-    }
 }
 

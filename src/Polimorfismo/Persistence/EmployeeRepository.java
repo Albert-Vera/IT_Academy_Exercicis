@@ -14,13 +14,10 @@ public class EmployeeRepository {
     public EmployeeRepository(){
 
     }
-
     public List<AbsStaffMember> getAllMembers(){
 
         return new ArrayList<>(members);
-
     }
-
 
     public void addMember(AbsStaffMember member) throws Exception{
         if(member==null) throw new Exception();

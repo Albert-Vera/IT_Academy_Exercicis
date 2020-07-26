@@ -13,22 +13,9 @@ public class Employee extends AbsStaffMember {
         this.salaryPerMonth=salaryPerMonth;
         this.paymentRate=paymentRate;
     }
-    public Employee(String name, String address, String phone ) throws Exception {
-        super(name, address, phone);
-
-        this.paymentRate=paymentRate;
-    }
     @Override
     public void pay() {
 
         setTotalPaid(paymentRate.pay(salaryPerMonth));
-    }
-
-    public double getSalaryPerMonth() {
-        return salaryPerMonth;
-    }
-
-    public IPaymentRate getPaymentRate() {
-        return paymentRate;
     }
 }
